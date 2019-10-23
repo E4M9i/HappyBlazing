@@ -1,0 +1,21 @@
+﻿@page "/converter"
+@inherits Converter
+
+<h3>Decoupled Converter</h3>
+<div>
+    <table>
+        <tr>
+            <td width="250px">
+                Km/h :
+                <input id="txt" type="number" style="border:thick" @bind-value="@Kmh" />
+            </td>
+
+            <td><button class="btn btn-outline-secondary" @onclick="Convert">Km/h to Knot</button></td>
+        </tr>
+        <tr>
+            <td>
+                Knot :@Knot
+            </td>
+        </tr>
+    </table>
+</div>
